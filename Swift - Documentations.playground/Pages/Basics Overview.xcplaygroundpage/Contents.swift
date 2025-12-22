@@ -11,15 +11,19 @@ var myVariable: Int = 10
 myVariable += 10
 print(myVariable)
 
-// Int , Double (used for math) ,Float ,
+// Int , Double (used for math) ,Float , String
 //CGFloat(used for UI)  , Bool , UInt16.min , UInt16.max ,Date
 let implicitInteger = 70
 let imDouble = 20.0
 let implicitFloat: Float = 70.0
 
-let label = "The width is"
+let isboolean : Bool = true
+let label = "The width is" // by default taken as String
 let width = 44
 let widthLabel = label + String(width)
+
+// Oder of operation
+
 
 let apple = 21
 let appleSumarry = "I have \(apple) apples"
@@ -31,6 +35,7 @@ let float = 2.0
 var x=0.0, y = 12, z=0
 
 let myFirstDate: Date = Date()
+print(myFirstDate)
 
 var red, blu, green : Float
 
@@ -79,7 +84,7 @@ typealias db = Double
 var areaCircle:db =  3.14 * 2 * 2
 
 let orangesbeOranges = true
-let turnipsAreDelicious = false
+let turnipsAreDelicious : Bool = false
 
 if turnipsAreDelicious {
     print("Mmm, tasty turnips!")
@@ -95,6 +100,12 @@ if turnipsAreDelicious {
 let i = 1
 if i == 1 {
     // this example will compile successfully
+}
+
+let userIsPremium = true
+
+if !userIsPremium {
+    print("User is not premium")
 }
 
 

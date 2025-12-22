@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='7.0' target-platform='ios' swift-version='6' buildActiveScheme='true' executeOnSourceChanges='true' importAppTypes='true'/>
+<playground version='7.0' target-platform='ios' swift-version='6'>
+    <pages>
+        <page name='Basics Overview'/>
+        <page name='Collection Types'/>
+        <page name='Concurrency'/>
+        <page name='Control Flow'/>
+        <page name='Enumerations and Structures'/>
+        <page name='Error handling'/>
+        <page name='Functions and Closures'/>
+        <page name='Generics'/>
+        <page name='Optionals and nil-coaleasing '/>
+        <page name='Protocols and Extensions'/>
+    </pages>
+</playground>
