@@ -37,7 +37,7 @@ var optionalString: String? = "Hello"
 print(optionalString == nil)
 
 var optionslName: String? = "john"
-var greeingM :String? = "Hello !"
+var greeingM  = "Hello !"
 let name = optionslName ?? "world"
 
 greeingM = "hello \(name)"
@@ -49,7 +49,7 @@ if let nickname {
 }
 
 
-///// Switch
+// Switch
 
 let veggie = "carrot"
 switch veggie {
@@ -168,6 +168,32 @@ let plusThree = -minusThree   // plusThree equals 3, or "minus minus three"
 //The nil-coalescing operator (a ?? b) unwraps an optional a if it contains a value, or returns a default value b if a is nil. The expression a is always of an optional type. The expression b must match the type that’s stored inside a.
 //The nil-coalescing operator is shorthand for the code below:
 // a != nil ? a! : b
+
+
+
+for index in 1...5 {
+    print("\(index) times 5 is \(index * 5)")
+}
+// 1 times 5 is 5
+// 2 times 5 is 10
+// 3 times 5 is 15
+// 4 times 5 is 20
+// 5 times 5 is 25
+
+
+let base = 3
+let power = 10
+var answer = 1
+for _ in 1...power {
+    answer *= base
+}
+print("\(base) to the power of \(power) is \(answer)")
+// Prints "3 to the power of 10 is 59049".
+
+let minutes = 60
+for tickMark in 0..<minutes {
+    // render the tick mark each minute (60 times)
+}
 
 
 

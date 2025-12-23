@@ -62,7 +62,52 @@ import Foundation
  When you edit a Reference type, you edit the object that you are referencing. This "reference" is called "pointer" because it "points" to an object in the Heap (in memory).
  this is the reason why there is only one heap in the memory . -> its shared accorss all threads -> hence risk is involved .
  
+ 
+ */
 
+struct quiz {
+    
+    let title : String = "Hello, World !!"
+}
+
+class classroom {
+    
+    let title : String = "Hello, World !!"
+}
+
+
+
+ /* Class vs Struct explained to a 5-year old
+ 
+ Imagine a school and in the school there are classroom
+ within each class, there are quizess
+ During the day. the teacher will hand out many different quizzes to different classes. The students will ans. the quizes and return them back to teacher.
+ 
+ "school" = app
+ "classroom" = class
+ "quiz" = struct
+ 
+  
+  In this eg. we have a classroom , there are many actions that occur inside the classroom.
+  In the code, we create a class and perform actions within the class
+  
+  
+  In this eg., there are manu different types of quizzes. The teacher hands out the quizzess and the students take the quizzess and return them to the teacher
+  In the code , we create many structs and pass them around out app with ease.
+  
+  
+  Note :
+  This metaphor is Not perfect :)
+  Technical a "quiz" can be a class, etc.
+  
+  We want to use a class for things like :
+  "Manager" "Data Service" "SErvice" "Factory" "ViewModel"
+  Objects that we create and wnat to perdorm actions inside
+  
+  We want to use a struct for things like :
+  Data Models
+  Objects that we create and pass around our app. 
+   
  
  
  */

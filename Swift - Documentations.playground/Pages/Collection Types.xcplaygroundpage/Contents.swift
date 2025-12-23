@@ -124,6 +124,6 @@ func doSomething (info : (name: String, userIsPre: Bool, userIsNew: Bool)){
 }
 
 let info = getUserInfo4()
-doSomething(info: info)  // pointing the info in doSomething method to getinfo4() 
+doSomething(info: info)  // pointing the info in doSomething method to getinfo4()
 
 
