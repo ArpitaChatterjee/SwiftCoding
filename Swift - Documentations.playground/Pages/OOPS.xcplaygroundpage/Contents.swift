@@ -101,7 +101,7 @@ class classroom {
   Technical a "quiz" can be a class, etc.
   
   We want to use a class for things like :
-  "Manager" "Data Service" "SErvice" "Factory" "ViewModel"
+  "Manager" "Data Service" "Service" "Factory" "ViewModel"
   Objects that we create and wnat to perdorm actions inside
   
   We want to use a struct for things like :
@@ -111,5 +111,58 @@ class classroom {
  
  
  */
+
+/*
+ 
+ Classes are slow !
+ Classes are stored in the Heap memory
+ Objetcs in the Heap are REference Types
+ Reference types point to an object in memeory and update the object in memory
+ 
+ */
+
+
+// All the data needed for some screen
+
+class ScreenViewModel {
+    let title : String
+    var showbutton : Bool = false
+    
+//    Same init as a Struct, except structs have implicit inits
+    init(titleIn: String) {
+        self.title = titleIn
+    }
+    
+    deinit{
+//        run as the object is being removed from memory
+//        Structs do Not have deinit !
+    }
+    
+    
+    //Mutation inside class - hence have function inside the class to make the changes
+    func hideButton(){
+        showbutton = false
+    }
+    
+    func updateShowButton(newValue : Bool){
+        showbutton = newValue
+    }
+
+}
+ 
+// in struct we use var as the value will be changing
+
+// pointer to the class in memory  - let is used as its a constant value
+// in classes we create instance and change value inside the instance
+
+// Notice that we're useing a let
+// the object itself is not chnaging -> but data inside is changing
+
+let viewModel : ScreenViewModel = ScreenViewModel(titleIn: "Hello World")
+viewModel.showbutton = true
+
+viewModel.hideButton()
+viewModel.updateShowButton(newValue: false)
+
 
 

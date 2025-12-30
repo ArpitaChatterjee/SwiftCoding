@@ -2,12 +2,8 @@
 
 import Foundation
 
-var greeting = "Hello, playground"
-
-//: [Next](@next)
-
 // Bools
-// Arrays
+// Arrays , sets, tupples
 var fruits = ["strawberries" , "abe" , "tangirine"]
 fruits[1]
 //arry automatically grows as we add element
@@ -125,5 +121,20 @@ func doSomething (info : (name: String, userIsPre: Bool, userIsNew: Bool)){
 
 let info = getUserInfo4()
 doSomething(info: info)  // pointing the info in doSomething method to getinfo4()
+
+
+// Arrays  , Sets
+
+let apple: String =  "Apple"
+let banana: String = "Banana"
+let cherry: String = "Cherry"
+
+
+let fruit1: [String] = [apple,banana,cherry]
+let fruit2: [String] = [cherry,apple]
+print(fruit1)
+print(fruit2)
+
+let fruitSet: Array<String> = [apple,banana,cherry]
 
 
